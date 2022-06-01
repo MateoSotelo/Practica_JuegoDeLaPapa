@@ -12,27 +12,18 @@ namespace JuegoDeLaPapa
         {
             Console.WriteLine("Comienza el juego");
             int DadosRestantes = 5;
-            List<int> listaNumeros = new List<int>();
             bool Jugar = true;
+
+            Servicio.ServiceClient servicio = new Servicio.ServiceClient();
 
             while (Jugar)
             {
                 Console.WriteLine("Presione cualquier tecla para tirar los dados");
                 Console.ReadKey();
 
-                while (DadosRestantes > 0)
-                {
-                    listaNumeros.Add(ObtenerNumero());
-                }
-
-
+                servicio.Jugar(DadosRestantes);
             }
         }
 
-        static int ObtenerNumero()
-        {
-            Random random = new Random();
-            return random.Next(1, 6);
-        }
     }
 }

@@ -27,12 +27,17 @@ public class Service : IService
 		return composite;
 	}
 
-	public class Juego
+    public void Jugar(int ints)
+    {
+		Juego nuevoJuego = new Juego(ints);
+    }
+
+    public class Juego
 	{
-		private int Puntos { get; set; }
-		private int DadosRestantes { get; set; }
-		private List<int> Numeros { get; set; }
-		private int[] VerificarCoincidencias()
+		public int Puntos { get; set; }
+		public int DadosRestantes { get; set; }
+		public List<int> Numeros { get; set; }
+		public int[] VerificarCoincidencias()
 		{
 			int[] Contador = new int[Numeros.Count + 1];
 			for (int i = 0; i < Numeros.Count + 1; i++)
@@ -47,9 +52,9 @@ public class Service : IService
 
 			return Contador;
 		}
-		private int ObtenerDadosRestantes()
+		public int ObtenerDadosRestantes()
 		{
-			foreach (int num in Numeros)
+            foreach (int num in Numeros)
 			{
 				if (Numeros.FindAll(x => x == num).Count > 1)
 				{
@@ -59,7 +64,7 @@ public class Service : IService
 
 			return Numeros.Count;
 		}
-		private int ContarPuntos(int[] Contador)
+		public int ContarPuntos(int[] Contador)
 		{
 			int Puntos = 0;
 
@@ -73,7 +78,7 @@ public class Service : IService
 
 			return Puntos;
 		}
-		private bool VerificarEscalera(List<int> Numeros)
+		public bool VerificarEscalera(List<int> Numeros)
 		{
 			Numeros = Numeros.OrderBy(x => x).ToList();
 			bool Correcto = true;
@@ -95,9 +100,21 @@ public class Service : IService
 
 			return Correcto;
 		}
-		public Juego(List<int> numeros)
+		public List<int> ObtenerLista(int Numero)
+		{
+			List<int> lista = new List<int>();
+			Random random = new Random();
+
+			for (int i = 0; i < Numero; i++)
+			{
+				lista.Add(random.Next(1, 6));
+			}
+
+			return lista;
+		}
+		public Juego(int NumeroDeDados)
         {
-			this.Numeros = numeros;
+			this.Numeros = ObtenerLista(NumeroDeDados);
 			this.DadosRestantes = ObtenerDadosRestantes();
 
 			if (VerificarEscalera(Numeros))
@@ -115,4 +132,5 @@ public class Service : IService
             }
         }
 	}
+
 }

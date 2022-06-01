@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuegoDeLaPapa", "JuegoDeLaPapa\JuegoDeLaPapa.csproj", "{D7A2C475-E770-486C-9D65-23950680A396}"
+	ProjectSection(ProjectDependencies) = postProject
+		{87C595FA-191B-491E-B3A3-2768EC2CB81A} = {87C595FA-191B-491E-B3A3-2768EC2CB81A}
+	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ServicioDeLaPapa", "ServicioDeLaPapa\", "{87C595FA-191B-491E-B3A3-2768EC2CB81A}"
 	ProjectSection(WebsiteProperties) = preProject

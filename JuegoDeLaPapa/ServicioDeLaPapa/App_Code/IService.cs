@@ -17,6 +17,9 @@ public interface IService
 	[OperationContract]
 	CompositeType GetDataUsingDataContract(CompositeType composite);
 
+	[OperationContract]
+	void Jugar(int Dados);
+
 	// TODO: agregue aquí sus operaciones de servicio
 }
 
