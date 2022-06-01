@@ -1,0 +1,8 @@
+C:\Users\msote\OneDrive\Documentos\Repositorios\Practica_JuegoDeLaPapa\JuegoDeLaPapa\JuegoDeLaPapa\bin\Debug\JuegoDeLaPapa.exe.config
+C:\Users\msote\OneDrive\Documentos\Repositorios\Practica_JuegoDeLaPapa\JuegoDeLaPapa\JuegoDeLaPapa\bin\Debug\JuegoDeLaPapa.exe
+C:\Users\msote\OneDrive\Documentos\Repositorios\Practica_JuegoDeLaPapa\JuegoDeLaPapa\JuegoDeLaPapa\bin\Debug\JuegoDeLaPapa.pdb
+C:\Users\msote\OneDrive\Documentos\Repositorios\Practica_JuegoDeLaPapa\JuegoDeLaPapa\JuegoDeLaPapa\obj\Debug\JuegoDeLaPapa.csproj.AssemblyReference.cache
+C:\Users\msote\OneDrive\Documentos\Repositorios\Practica_JuegoDeLaPapa\JuegoDeLaPapa\JuegoDeLaPapa\obj\Debug\JuegoDeLaPapa.csproj.SuggestedBindingRedirects.cache
+C:\Users\msote\OneDrive\Documentos\Repositorios\Practica_JuegoDeLaPapa\JuegoDeLaPapa\JuegoDeLaPapa\obj\Debug\JuegoDeLaPapa.csproj.CoreCompileInputs.cache
+C:\Users\msote\OneDrive\Documentos\Repositorios\Practica_JuegoDeLaPapa\JuegoDeLaPapa\JuegoDeLaPapa\obj\Debug\JuegoDeLaPapa.exe
+C:\Users\msote\OneDrive\Documentos\Repositorios\Practica_JuegoDeLaPapa\JuegoDeLaPapa\JuegoDeLaPapa\obj\Debug\JuegoDeLaPapa.pdb
