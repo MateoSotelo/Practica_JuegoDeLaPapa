@@ -52,18 +52,6 @@ public class Service : IService
 
 			return Contador;
 		}
-		public int ObtenerDadosRestantes()
-		{
-            foreach (int num in Numeros)
-			{
-				if (Numeros.FindAll(x => x == num).Count > 1)
-				{
-					Numeros.RemoveAll(x => x == num);
-				}
-			}
-
-			return Numeros.Count;
-		}
 		public int ContarPuntos(int[] Contador)
 		{
 			int Puntos = 0;
@@ -112,6 +100,21 @@ public class Service : IService
 
 			return lista;
 		}
+		public int ObtenerDadosRestantes()
+        {
+			var Contador = VerificarCoincidencias();
+			int c = 0;
+
+            for (int i = 0; i < Contador.Length; i++)
+            {
+                if (Contador[i] >= 1)
+                {
+					c++;
+                }
+            }
+
+			return c;
+        }
 		public Juego(int NumeroDeDados)
         {
 			this.Numeros = ObtenerLista(NumeroDeDados);
